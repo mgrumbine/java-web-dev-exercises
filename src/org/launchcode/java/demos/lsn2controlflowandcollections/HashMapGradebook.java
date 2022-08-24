@@ -1,5 +1,6 @@
 package org.launchcode.java.demos.lsn2controlflowandcollections;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -43,4 +44,3 @@ public class HashMapGradebook {
         double avg = sum / students.size();
         System.out.println("Average grade: " + avg);
     }
-}
