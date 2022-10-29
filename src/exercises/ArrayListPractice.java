@@ -1,6 +1,6 @@
 package exercises;
 
-import java.sql.SQLOutput;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -48,8 +48,7 @@ public class ArrayListPractice {
 
     public static ArrayList<String> wordsOfACertainLength(ArrayList<String> arrayList) {
         ArrayList<String> arrayListToPrint = new ArrayList<>();
-        Scanner input;
-        input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.println("Please enter the word length you want to print:");
         int userWordLength = input.nextInt();
         input.close();
