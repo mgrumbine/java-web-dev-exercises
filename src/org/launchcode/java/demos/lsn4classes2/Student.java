@@ -48,11 +48,25 @@ public class Student {
        this.gpa = currentQualityScore/this.numberOfCredits;
     }
 
-    // TODO: Add your custom 'toString' method here. Make sure it returns a well-formatted String rather
-    //  than just the class fields.
+    @Override
+    public String toString(){
+        return "Name: " + this.name + ", Student ID: " + this.studentId;
+    }
 
-    // TODO: Add your custom 'equals' method here. Consider which fields should match in order to call two
-    //  Student objects equal.
+    @Override
+    public boolean equals(Object toBeCompared){
+        if(toBeCompared == this){
+            return true;
+        }
+        if(toBeCompared == null) {
+            return false;
+        }
+        if(toBeCompared.getClass() != this.getClass()){
+            return false;
+        }
+        Student student = (Student) toBeCompared;
+        return this.studentId == student.studentId;
+    }
 
     public String getName() {
         return name;
