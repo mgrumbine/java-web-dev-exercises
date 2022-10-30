@@ -19,9 +19,10 @@ public class HashmapPractice {
 
             System.out.print("Student: ");
             newStudent = input.nextLine();
+            String toPrint = MessageFormat.format("Enter {0}" + "''" + "s student ID number: ", newStudent);
 
             if (!newStudent.equals("")) {
-                System.out.print(MessageFormat.format("Enter {0}'s student ID number: ", newStudent));
+                System.out.print(toPrint);
                 int newID = input.nextInt();
                 students.put(newID, newStudent);
 
